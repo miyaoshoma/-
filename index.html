@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡単なウェブサイト</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 高さを100%に */
+        }
+
+        header {
+            background: #440000; /* ヘッダーの背景色を変更 */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1; /* メインを拡張 */
+            padding: 20px;
+            color: #cc0000; /* メインの文字色を変更 */
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #440000; /* フッターの背景色を変更 */
+            color: white;
+            position: fixed; /* フッターを固定 */
+            bottom: 0;
+            width: 100%; /* 幅を100%に */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>私のお菓子作り</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">最近作ったお菓子</a></li>
+                <li><a href="#services">今作りたいお菓子</a></li>
+                <li><a href="#contact"></a>追加情報</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>最近作ったお菓子</h2>
+            <p>カップケーキ</p>
+        </section>
+        <section id="services">
+            <h2>今作りたいお菓子</h2>
+            <p>チョコレートブラウニー</p>
+        </section>
+        <section id="additional">
+            <h2>追加情報</h2>
+            <p>さらに詳しい情報は、こちらからご確認ください。</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 私のウェブサイト</p>
+    </footer>
+</body>
+</html>
